@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /scripts/
+Disallow: /assets/js/
+
+Sitemap: https://www.assetra.it/sitemap.xml

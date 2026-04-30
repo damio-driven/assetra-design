@@ -1,0 +1,26 @@
+# ASSETRA — robots.txt
+# Roman Imperial / Bold Luxury Variant
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.assetra.it/sitemap.xml
+
+# Crawl-delay (optional, polite crawling)
+Crawl-delay: 1
+
+# Disallow admin/private areas (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Block specific bots if needed (example)
+# User-agent: AhrefsBot
+# Disallow: /
+
+# User-agent: SemrushBot
+# Disallow: /
+
+# Note: Legal pages are marked with noindex in meta tags
+# to prevent them from appearing in search results

@@ -1,0 +1,6 @@
+<svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">ASSETRA Logo</title>
+  <desc id="logoDesc">Wordmark ASSETRA con punto rosso distintivo</desc>
+  <text x="0" y="28" class="logo-text" font-family="'DM Sans', sans-serif" font-size="24" font-weight="500" letter-spacing="2.4" fill="#1A1A18">ASSETRA</text>
+  <circle cx="108" cy="20" r="3" fill="#C8102E"/>
+</svg>

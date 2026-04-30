@@ -1,0 +1,427 @@
+- generic [active] [ref=e1]:
+  - banner:
+    - navigation "Navigazione principale" [ref=e2]:
+      - generic [ref=e3]:
+        - link "ASSETRA — Homepage" [ref=e4] [cursor=pointer]:
+          - /url: "#hero"
+          - img [ref=e5]:
+            - generic [ref=e6]: ASSETRA
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Chi siamo" [ref=e10] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e11]:
+            - link "Servizi" [ref=e12] [cursor=pointer]:
+              - /url: "#services"
+          - listitem [ref=e13]:
+            - link "Portfolio" [ref=e14] [cursor=pointer]:
+              - /url: "#portfolio"
+          - listitem [ref=e15]:
+            - link "Partner" [ref=e16] [cursor=pointer]:
+              - /url: "#partner"
+          - listitem [ref=e17]:
+            - link "Contatti" [ref=e18] [cursor=pointer]:
+              - /url: "#contact"
+        - generic "Seleziona lingua" [ref=e20]:
+          - button "IT" [pressed] [ref=e21] [cursor=pointer]
+          - generic [ref=e22] [cursor=pointer]: /
+          - button "EN" [ref=e23] [cursor=pointer]
+    - dialog:
+      - navigation:
+        - list:
+          - listitem:
+            - link:
+              - /url: "#about"
+              - text: Chi siamo
+          - listitem:
+            - link:
+              - /url: "#services"
+              - text: Servizi
+          - listitem:
+            - link:
+              - /url: "#portfolio"
+              - text: Portfolio
+          - listitem:
+            - link:
+              - /url: "#partner"
+              - text: Partner
+          - listitem:
+            - link:
+              - /url: "#contact"
+              - text: Contatti
+  - main [ref=e24]:
+    - region "Homepage Hero" [ref=e25]:
+      - img "Ufficio di lusso con interior design di eccellenza — ASSETRA" [ref=e27]
+      - generic [ref=e30]:
+        - paragraph [ref=e31]:
+          - generic [ref=e32]: Eccellenza nell'arredo contract
+        - heading "L'eccellenza prende forma." [level=1] [ref=e33]:
+          - text: L'eccellenza
+          - emphasis [ref=e34]: prende forma.
+        - paragraph [ref=e35]: ASSETRA rappresenta soluzioni di interior design di alto livello per retail, hospitality e spazi professionali. Dove qualità e relazione fanno la differenza.
+        - generic [ref=e36]:
+          - link "Scopri le soluzioni" [ref=e37] [cursor=pointer]:
+            - /url: "#services"
+          - link "Contattaci" [ref=e38] [cursor=pointer]:
+            - /url: "#contact"
+      - generic [ref=e41]: Scroll
+    - region "Partner principali" [ref=e42]:
+      - generic [ref=e43]:
+        - paragraph [ref=e44]: I nostri partner
+        - link "Arken Group — visita il sito" [ref=e47] [cursor=pointer]:
+          - /url: https://www.arkengroup.it/it
+          - text: Arken
+          - generic [ref=e48]: Group
+    - region "Rappresentanza di eccellenza per spazi che ispirano." [ref=e49]:
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - paragraph [ref=e52]: Chi siamo
+          - heading "Rappresentanza di eccellenza per spazi che ispirano." [level=2] [ref=e53]:
+            - text: Rappresentanza di eccellenza
+            - text: per spazi che
+            - emphasis [ref=e54]: ispirano.
+          - generic [ref=e55]:
+            - paragraph [ref=e56]: ASSETRA è un'agenzia di rappresentanza specializzata nell'arredo contract di alto livello. Lavoriamo al fianco di architetti, progettisti e committenti per portare l'eccellenza italiana negli spazi retail, nelle strutture hospitality, negli uffici e negli ambienti professionali.
+            - paragraph [ref=e57]: "La nostra forza è nella qualità delle relazioni che costruiamo: con i produttori, con i clienti, con gli spazi che contribuiamo a creare. Ogni progetto è una storia di personalizzazione, attenzione al dettaglio e visione condivisa."
+          - link "Lavora con noi" [ref=e59] [cursor=pointer]:
+            - /url: "#contact"
+          - generic [ref=e60]:
+            - generic [ref=e61]:
+              - generic [ref=e62]: 0+
+              - paragraph [ref=e63]: Anni di esperienza
+            - generic [ref=e64]:
+              - generic [ref=e65]: 0+
+              - paragraph [ref=e66]: Brand rappresentati
+            - generic [ref=e67]:
+              - generic [ref=e68]: 0+
+              - paragraph [ref=e69]: Progetti completati
+        - img "Studio di interior design — consulenza ASSETRA" [ref=e72]
+    - region "Soluzioni per ogni spazio." [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - paragraph [ref=e77]: Cosa facciamo
+          - heading "Soluzioni per ogni spazio." [level=2] [ref=e78]:
+            - text: Soluzioni per ogni
+            - emphasis [ref=e79]: spazio.
+        - generic [ref=e80]:
+          - article [ref=e81]:
+            - img [ref=e83]
+            - heading "Retail" [level=3] [ref=e87]
+            - paragraph [ref=e88]: Soluzioni d'arredo su misura per spazi commerciali, boutique e showroom. Progettiamo ambienti che valorizzano il brand e ottimizzano l'esperienza d'acquisto.
+          - article [ref=e89]:
+            - img [ref=e91]
+            - heading "Hospitality" [level=3] [ref=e94]
+            - paragraph [ref=e95]: "Hotel, resort e ristorazione: creiamo atmosfere raffinate dove ogni dettaglio racconta una storia di qualità e accoglienza. Dal concept alla consegna chiavi in mano."
+          - article [ref=e96]:
+            - img [ref=e98]
+            - heading "Uffici e Contract" [level=3] [ref=e103]
+            - paragraph [ref=e104]: Ambienti di lavoro che coniugano funzionalità e estetica. Gestiamo l'intera filiera — dalla specifica all'installazione — per progetti di grandi dimensioni.
+          - article [ref=e105]:
+            - img [ref=e107]
+            - heading "Spazi Professionali" [level=3] [ref=e109]
+            - paragraph [ref=e110]: "Studi medici, poliambulatori, centri wellness e spazi polivalenti: arredo specializzato per ogni necessità professionale, con attenzione alle normative e all'ergonomia."
+          - article [ref=e111]:
+            - img [ref=e113]
+            - heading "Consulenza" [level=3] [ref=e117]
+            - paragraph [ref=e118]: Consulenza strategica su selezione dei materiali, fornitori e gestione del budget. Guidiamo i clienti dal concept iniziale alla specifica finale con competenza e indipendenza.
+          - article [ref=e119]:
+            - img [ref=e121]
+            - heading "Progettazione" [level=3] [ref=e125]
+            - paragraph [ref=e126]: Supporto tecnico a progettisti e committenti per la specifica di arredi su misura e il coordinamento con i produttori italiani.
+    - region "Portfolio" [ref=e127]:
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - paragraph [ref=e131]: I nostri progetti
+            - heading "Portfolio" [level=2] [ref=e132]
+          - group "Filtra per categoria" [ref=e133]:
+            - button "Tutti" [ref=e134] [cursor=pointer]
+            - button "Retail" [ref=e135] [cursor=pointer]
+            - button "Hospitality" [ref=e136] [cursor=pointer]
+            - button "Uffici" [ref=e137] [cursor=pointer]
+        - list [ref=e138]:
+          - listitem "Boutique Concept Store Milano — apri anteprima" [ref=e139] [cursor=pointer]:
+            - img "Boutique concept store interior design moderno — retail" [ref=e140]
+            - generic [ref=e142]:
+              - text: Retail
+              - paragraph [ref=e143]: Boutique Concept Store — Milano
+          - listitem "Grand Hotel Lobby Firenze — apri anteprima" [ref=e144] [cursor=pointer]:
+            - img "Hotel lobby di lusso con arredo contract italiano — hospitality" [ref=e145]
+            - generic [ref=e147]:
+              - text: Hospitality
+              - paragraph [ref=e148]: Grand Hotel Lobby — Firenze
+          - listitem "Corporate HQ Roma — apri anteprima" [ref=e149] [cursor=pointer]:
+            - img "Uffici corporate premium con arredo su misura — contract" [ref=e150]
+            - generic [ref=e152]:
+              - text: Uffici
+              - paragraph [ref=e153]: Corporate HQ — Roma
+          - listitem "Flagship Store Venezia — apri anteprima" [ref=e154] [cursor=pointer]:
+            - img "Flagship store interior con allestimento di lusso — retail" [ref=e155]
+            - generic [ref=e157]:
+              - text: Retail
+              - paragraph [ref=e158]: Flagship Store — Venezia
+          - listitem "Boutique Hotel Suite Amalfi — apri anteprima" [ref=e159] [cursor=pointer]:
+            - img "Suite boutique hotel con arredo raffinato — hospitality" [ref=e160]
+            - generic [ref=e162]:
+              - text: Hospitality
+              - paragraph [ref=e163]: Boutique Hotel Suite — Amalfi
+          - listitem "Executive Offices Torino — apri anteprima" [ref=e164] [cursor=pointer]:
+            - img "Uffici executive design minimale — uffici contract" [ref=e165]
+            - generic [ref=e167]:
+              - text: Uffici
+              - paragraph [ref=e168]: Executive Offices — Torino
+    - dialog:
+      - button: ×
+    - region "Resta aggiornato." [ref=e169]:
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - paragraph [ref=e172]: Seguici
+          - heading "Resta aggiornato." [level=2] [ref=e173]:
+            - text: Resta
+            - emphasis [ref=e174]: aggiornato.
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - generic [ref=e177]:
+              - img [ref=e179]
+              - generic [ref=e181]: LinkedIn
+            - generic [ref=e182]:
+              - generic [ref=e183]:
+                - generic [ref=e184]:
+                  - generic [ref=e185]: 🔒
+                  - paragraph [ref=e186]: Accetta i cookie marketing per visualizzare i post LinkedIn.
+                  - button "Preferenze cookie" [ref=e187] [cursor=pointer]
+                - paragraph [ref=e188]: 15 Aprile 2025
+                - paragraph [ref=e189]: "Nuovo progetto completato: sede corporate per cliente del settore finance a Milano. Arredo su misura, materiali premium, consegna nei tempi."
+                - paragraph [ref=e191]:
+                  - img [ref=e192]
+                  - text: Visualizza su LinkedIn
+              - generic [ref=e194]:
+                - generic [ref=e195]:
+                  - generic [ref=e196]: 🔒
+                  - paragraph [ref=e197]: Accetta i cookie marketing per visualizzare i post LinkedIn.
+                  - button "Preferenze cookie" [ref=e198] [cursor=pointer]
+                - paragraph [ref=e199]: 3 Aprile 2025
+                - paragraph [ref=e200]: "Partnership con Arken Group: insieme per portare l'eccellenza del design italiano nei mercati internazionali."
+                - paragraph [ref=e202]:
+                  - img [ref=e203]
+                  - text: Visualizza su LinkedIn
+              - generic [ref=e205]:
+                - generic [ref=e206]:
+                  - generic [ref=e207]: 🔒
+                  - paragraph [ref=e208]: Accetta i cookie marketing per visualizzare i post LinkedIn.
+                  - button "Preferenze cookie" [ref=e209] [cursor=pointer]
+                - paragraph [ref=e210]: 22 Marzo 2025
+                - paragraph [ref=e211]: "Salone del Mobile 2025: siamo stati presenti con i nostri partner. Un'edizione straordinaria, ricca di innovazione e tendenze."
+                - paragraph [ref=e213]:
+                  - img [ref=e214]
+                  - text: Visualizza su LinkedIn
+          - generic [ref=e216]:
+            - generic [ref=e217]:
+              - img [ref=e219]
+              - generic [ref=e221]: Instagram
+            - generic [ref=e222]:
+              - generic [ref=e223]:
+                - generic [ref=e224]:
+                  - generic [ref=e225]: 🔒
+                  - paragraph [ref=e226]: Accetta i cookie marketing per visualizzare i post Instagram.
+                  - button "Preferenze cookie" [ref=e227] [cursor=pointer]
+                - paragraph [ref=e228]: 18 Aprile 2025
+                - paragraph [ref=e229]: "Dettagli che fanno la differenza. Il nuovo progetto hospitality in Toscana è quasi pronto. ✨ #interiordesign #contract #luxury"
+                - paragraph [ref=e231]:
+                  - img [ref=e232]
+                  - text: Visualizza su Instagram
+              - generic [ref=e234]:
+                - generic [ref=e235]:
+                  - generic [ref=e236]: 🔒
+                  - paragraph [ref=e237]: Accetta i cookie marketing per visualizzare i post Instagram.
+                  - button "Preferenze cookie" [ref=e238] [cursor=pointer]
+                - paragraph [ref=e239]: 10 Aprile 2025
+                - paragraph [ref=e240]: "Salone del Mobile 2025: emozioni, tendenze, innovazione. Il meglio del design italiano sotto un unico tetto. 🇮🇹 #salonedelmobile"
+                - paragraph [ref=e242]:
+                  - img [ref=e243]
+                  - text: Visualizza su Instagram
+              - generic [ref=e245]:
+                - generic [ref=e246]:
+                  - generic [ref=e247]: 🔒
+                  - paragraph [ref=e248]: Accetta i cookie marketing per visualizzare i post Instagram.
+                  - button "Preferenze cookie" [ref=e249] [cursor=pointer]
+                - paragraph [ref=e250]: 2 Aprile 2025
+                - paragraph [ref=e251]: "Materiali, texture, proporzioni. Tre parole che guidano ogni nostra scelta di arredo. Perché i dettagli non sono mai un caso. #assetra"
+                - paragraph [ref=e253]:
+                  - img [ref=e254]
+                  - text: Visualizza su Instagram
+    - region "Iniziamo a parlare." [ref=e256]:
+      - generic [ref=e257]:
+        - generic [ref=e258]:
+          - paragraph [ref=e259]: Parliamo
+          - heading "Iniziamo a parlare." [level=2] [ref=e260]:
+            - text: Iniziamo
+            - emphasis [ref=e261]: a parlare.
+          - paragraph [ref=e262]: Raccontaci il tuo progetto. Ti risponderemo entro 24 ore per capire come ASSETRA può contribuire al successo del tuo spazio.
+          - generic [ref=e263]:
+            - generic [ref=e264]:
+              - paragraph [ref=e265]: Email
+              - paragraph [ref=e266]:
+                - link "info@assetra.it" [ref=e267] [cursor=pointer]:
+                  - /url: mailto:info@assetra.it
+            - generic [ref=e268]:
+              - paragraph [ref=e269]: Telefono
+              - paragraph [ref=e270]:
+                - link "+39 000 000 0000" [ref=e271] [cursor=pointer]:
+                  - /url: tel:+390000000000
+            - generic [ref=e272]:
+              - paragraph [ref=e273]: Indirizzo
+              - paragraph [ref=e274]:
+                - text: Via dell'Eccellenza 12
+                - text: 20121 Milano MI
+            - generic [ref=e275]:
+              - paragraph [ref=e276]: Seguici
+              - paragraph [ref=e277]:
+                - link "LinkedIn ASSETRA" [ref=e278] [cursor=pointer]:
+                  - /url: "#"
+                  - text: LinkedIn
+                - link "Instagram ASSETRA" [ref=e279] [cursor=pointer]:
+                  - /url: "#"
+                  - text: Instagram
+        - form "Modulo di contatto" [ref=e281]:
+          - generic [ref=e282]:
+            - generic [ref=e283]: Nome *
+            - textbox "Nome" [ref=e284]
+          - generic [ref=e285]:
+            - generic [ref=e286]: Cognome *
+            - textbox "Cognome" [ref=e287]
+          - generic [ref=e288]:
+            - generic [ref=e289]: Email *
+            - textbox "Email" [ref=e290]
+          - generic [ref=e291]:
+            - generic [ref=e292]: Telefono
+            - textbox "Telefono" [ref=e293]
+          - generic [ref=e294]:
+            - generic [ref=e295]: Settore *
+            - combobox "Settore" [ref=e296] [cursor=pointer]:
+              - option "Seleziona…" [disabled] [selected]
+              - option "Retail"
+              - option "Hospitality"
+              - option "Uffici e Contract"
+              - option "Spazi Professionali"
+              - option "Altro"
+          - generic [ref=e297]:
+            - generic [ref=e298]: Messaggio *
+            - textbox "Messaggio" [ref=e299]:
+              - /placeholder: Descrivici il tuo progetto…
+          - generic [ref=e300]:
+            - checkbox "Ho letto e accetto la Privacy Policy. Acconsento al trattamento dei dati personali per rispondere alla mia richiesta." [ref=e301] [cursor=pointer]
+            - generic [ref=e302] [cursor=pointer]:
+              - text: Ho letto e accetto la
+              - link "Privacy Policy" [ref=e303]:
+                - /url: privacy-policy.html
+              - text: . Acconsento al trattamento dei dati personali per rispondere alla mia richiesta. *
+          - generic [ref=e304]:
+            - checkbox "Acconsento a ricevere comunicazioni commerciali e aggiornamenti da ASSETRA. (facoltativo)" [ref=e305] [cursor=pointer]
+            - generic [ref=e306] [cursor=pointer]: Acconsento a ricevere comunicazioni commerciali e aggiornamenti da ASSETRA. (facoltativo)
+          - button "Invia messaggio" [ref=e308] [cursor=pointer]
+  - contentinfo [ref=e309]:
+    - generic [ref=e310]:
+      - generic [ref=e311]:
+        - generic [ref=e312]:
+          - link "ASSETRA — Torna in cima" [ref=e313] [cursor=pointer]:
+            - /url: "#hero"
+            - img [ref=e314]:
+              - generic [ref=e315]: ASSETRA
+          - paragraph [ref=e317]: L'eccellenza prende forma.
+          - generic [ref=e318]:
+            - link "ASSETRA su LinkedIn" [ref=e319] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e320]
+            - link "ASSETRA su Instagram" [ref=e322] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e323]
+        - generic [ref=e325]:
+          - paragraph [ref=e326]: Sito
+          - list [ref=e327]:
+            - listitem [ref=e328]:
+              - link "Chi siamo" [ref=e329] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=e330]:
+              - link "Servizi" [ref=e331] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e332]:
+              - link "Portfolio" [ref=e333] [cursor=pointer]:
+                - /url: "#portfolio"
+            - listitem [ref=e334]:
+              - link "Partner" [ref=e335] [cursor=pointer]:
+                - /url: "#partner"
+        - generic [ref=e336]:
+          - paragraph [ref=e337]: Servizi
+          - list [ref=e338]:
+            - listitem [ref=e339]:
+              - link "Retail" [ref=e340] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e341]:
+              - link "Hospitality" [ref=e342] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e343]:
+              - link "Uffici e Contract" [ref=e344] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e345]:
+              - link "Consulenza" [ref=e346] [cursor=pointer]:
+                - /url: "#services"
+        - generic [ref=e347]:
+          - paragraph [ref=e348]: Legale
+          - list [ref=e349]:
+            - listitem [ref=e350]:
+              - link "Privacy Policy" [ref=e351] [cursor=pointer]:
+                - /url: privacy-policy.html
+            - listitem [ref=e352]:
+              - link "Cookie Policy" [ref=e353] [cursor=pointer]:
+                - /url: cookie-policy.html
+            - listitem [ref=e354]:
+              - link "Gestisci preferenze" [ref=e355] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e356]:
+        - paragraph [ref=e357]:
+          - text: © 2025 ASSETRA
+          - generic [ref=e358]: .
+          - text: Tutti i diritti riservati.
+        - generic [ref=e359]:
+          - link "Privacy Policy" [ref=e360] [cursor=pointer]:
+            - /url: privacy-policy.html
+          - link "Cookie Policy" [ref=e361] [cursor=pointer]:
+            - /url: cookie-policy.html
+          - link "Sitemap" [ref=e362] [cursor=pointer]:
+            - /url: sitemap.xml
+  - region "Informativa cookie" [ref=e363]:
+    - generic [ref=e364]:
+      - generic [ref=e365]:
+        - strong [ref=e366]: Utilizziamo i cookie
+        - paragraph [ref=e367]:
+          - text: Utilizziamo cookie tecnici e, previo consenso, cookie analitici e di marketing per migliorare la tua esperienza. Leggi la nostra
+          - link "Cookie Policy" [ref=e368] [cursor=pointer]:
+            - /url: cookie-policy.html
+          - text: .
+      - generic [ref=e369]:
+        - button "Accetta tutti" [ref=e370] [cursor=pointer]
+        - button "Solo necessari" [ref=e371] [cursor=pointer]
+        - button "Personalizza" [ref=e372] [cursor=pointer]
+  - dialog:
+    - generic:
+      - generic:
+        - heading [level=2]: Preferenze cookie
+        - button: ×
+      - generic:
+        - generic:
+          - generic:
+            - generic: Cookie necessari
+            - generic: Sempre attivi
+          - paragraph: Necessari per il funzionamento del sito. Non possono essere disabilitati.
+        - generic:
+          - generic:
+            - generic: Cookie analitici
+          - paragraph: Ci aiutano a capire come i visitatori interagiscono con il sito (pagine visitate, fonti di traffico). I dati sono aggregati e anonimi.
+        - generic:
+          - generic:
+            - generic: Cookie marketing
+          - paragraph: Utilizzati per mostrare contenuti personalizzati e abilitare i feed social LinkedIn/Instagram. Necessari per gli embed social.
+      - generic:
+        - button: Salva preferenze
+        - button: Accetta tutti

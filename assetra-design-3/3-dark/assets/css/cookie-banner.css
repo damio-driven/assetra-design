@@ -1,0 +1,165 @@
+/* ==========================================================================
+   ASSETRA — Cookie Banner Styles
+   GDPR Compliance Banner
+   ========================================================================== */
+
+/* Cookie Banner Base */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-gold);
+  padding: 2rem;
+  z-index: 1500;
+  transform: translateY(100%);
+  transition: transform var(--transition-medium);
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.cookie-banner.visible {
+  transform: translateY(0);
+}
+
+.cookie-content {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+/* Cookie Banner Typography */
+.cookie-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.cookie-text {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  max-width: 800px;
+}
+
+/* Cookie Options */
+.cookie-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background-color: var(--color-surface-alt);
+  border: 1px solid var(--color-border-gold);
+  border-radius: 0;
+}
+
+.cookie-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cookie-option input[type="checkbox"] {
+  accent-color: var(--color-gold);
+  width: 1.125rem;
+  height: 1.125rem;
+  cursor: pointer;
+}
+
+.cookie-option input[type="checkbox"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.cookie-option label {
+  font-size: 0.875rem;
+  color: var(--color-text);
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+/* Cookie Buttons */
+.cookie-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cookie-btn {
+  padding: 0.875rem 1.75rem;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border-radius: 0;
+}
+
+.cookie-btn--primary {
+  background-color: var(--color-accent);
+  border: none;
+  color: var(--color-text);
+  min-width: 160px;
+}
+
+.cookie-btn--primary:hover {
+  background-color: #a00d25;
+  box-shadow: 0 0 20px var(--color-accent-glow);
+}
+
+.cookie-btn--outline {
+  background: transparent;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  min-width: 160px;
+}
+
+.cookie-btn--outline:hover {
+  background-color: var(--color-gold);
+  color: var(--color-bg);
+}
+
+.cookie-btn--ghost {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  min-width: 140px;
+}
+
+.cookie-btn--ghost:hover {
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cookie-banner {
+    padding: 1.5rem 1rem;
+  }
+
+  .cookie-options {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .cookie-option {
+    width: 100%;
+  }
+
+  .cookie-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cookie-btn {
+    width: 100%;
+  }
+}

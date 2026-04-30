@@ -1,0 +1,131 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation "Main Navigation" [ref=e3]:
+      - link "ASSETRA Home" [ref=e4] [cursor=pointer]:
+        - /url: "#"
+        - text: ASSETRA.
+      - generic [ref=e5]:
+        - link "Chi Siamo" [ref=e6] [cursor=pointer]:
+          - /url: "#about"
+        - link "Servizi" [ref=e7] [cursor=pointer]:
+          - /url: "#services"
+        - link "Progetti" [ref=e8] [cursor=pointer]:
+          - /url: "#portfolio"
+        - link "Contatti" [ref=e9] [cursor=pointer]:
+          - /url: "#contact"
+        - generic [ref=e10]:
+          - button "Toggle Dark Mode" [ref=e11] [cursor=pointer]:
+            - img [ref=e12]
+          - button "Switch Language" [ref=e14] [cursor=pointer]: EN
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - img "Arredo Contract Excellence" [ref=e18]
+      - generic [ref=e19]:
+        - heading "Eccellenza nell'Arredo Contract" [level=1] [ref=e20]
+        - paragraph [ref=e21]: Rappresentiamo i leader nelle soluzioni di interior design per retail, hospitality e spazi professionali.
+        - link "Scopri i Progetti" [ref=e22] [cursor=pointer]:
+          - /url: "#portfolio"
+      - img [ref=e24]
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - heading "ASSETRA." [level=2] [ref=e30]
+        - paragraph [ref=e31]: ASSETRA è un'azienda di rappresentanza specializzata in mobili di eccellenza. Collaboriamo con partner di prestigio come Arken Group per offrire soluzioni d'arredo innovative che trasformano gli spazi professionali in esperienze uniche.
+      - generic [ref=e32]:
+        - img "Executive Furniture" [ref=e33]
+        - img "Modern Office Design" [ref=e34]
+    - generic [ref=e36]:
+      - heading "Le Nostre Soluzioni" [level=2] [ref=e37]
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - img [ref=e41]
+          - heading "Retail & Showroom" [level=3] [ref=e43]
+        - generic [ref=e44]:
+          - img [ref=e46]
+          - heading "Hospitality & Hotel" [level=3] [ref=e48]
+        - generic [ref=e49]:
+          - img [ref=e51]
+          - heading "Uffici & Professional" [level=3] [ref=e53]
+        - generic [ref=e54]:
+          - img [ref=e56]
+          - heading "Soluzioni Contract" [level=3] [ref=e58]
+    - generic [ref=e60]:
+      - generic [ref=e62]:
+        - heading "Progetti Realizzati" [level=2] [ref=e63]
+        - paragraph [ref=e64]: Una selezione dei migliori lavori realizzati con i nostri partner.
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - img "Luxury Retail Project" [ref=e67]
+          - generic [ref=e68]:
+            - heading "Luxury Retail Store" [level=4] [ref=e69]
+            - paragraph [ref=e70]: Milano, IT
+        - generic [ref=e71]:
+          - img "Modern Office Hub Project" [ref=e72]
+          - generic [ref=e73]:
+            - heading "Modern Office Hub" [level=4] [ref=e74]
+            - paragraph [ref=e75]: Roma, IT
+        - generic [ref=e76]:
+          - img "Boutique Hotel Project" [ref=e77]
+          - generic [ref=e78]:
+            - heading "Boutique Hotel" [level=4] [ref=e79]
+            - paragraph [ref=e80]: Firenze, IT
+    - generic [ref=e82]:
+      - heading "Seguici sui Social" [level=2] [ref=e83]
+      - generic [ref=e84]:
+        - link "Follow us on LinkedIn" [ref=e85] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e86]
+          - generic [ref=e88]: LinkedIn
+        - link "Follow us on Instagram" [ref=e89] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e90]
+          - generic [ref=e92]: Instagram
+      - generic [ref=e93]:
+        - img "Interior Detail" [ref=e95]
+        - img "Office Space" [ref=e97]
+        - img "Tech Office" [ref=e99]
+        - img "Lobby Design" [ref=e101]
+    - generic [ref=e104]:
+      - generic [ref=e106]:
+        - heading "Contattaci" [level=2] [ref=e107]
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - paragraph [ref=e110]: Email
+            - paragraph [ref=e111]: info@assetra.it
+          - generic [ref=e112]:
+            - paragraph [ref=e113]: Phone
+            - paragraph [ref=e114]: +39 06 1234567
+          - generic [ref=e115]:
+            - paragraph [ref=e116]: Address
+            - paragraph [ref=e117]:
+              - text: Via dell'Interior Design, 1
+              - text: 00100 Roma, IT
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - generic [ref=e122]: Nome
+            - textbox "Nome" [ref=e123]
+          - generic [ref=e124]:
+            - generic [ref=e125]: Email
+            - textbox "Email" [ref=e126]
+        - generic [ref=e127]:
+          - generic [ref=e128]: Messaggio
+          - textbox "Messaggio" [ref=e129]
+        - generic [ref=e130]:
+          - checkbox "Accetto il trattamento dei dati personali secondo la Privacy Policy." [ref=e131]
+          - generic [ref=e132]: Accetto il trattamento dei dati personali secondo la Privacy Policy.
+        - button "Invia Messaggio" [ref=e133] [cursor=pointer]
+  - contentinfo [ref=e134]:
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - generic [ref=e137]: ASSETRA.
+        - generic [ref=e138]:
+          - link "Privacy Policy" [ref=e139] [cursor=pointer]:
+            - /url: "#"
+          - link "Cookies Policy" [ref=e140] [cursor=pointer]:
+            - /url: "#"
+          - link "GDPR" [ref=e141] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e142]: © 2024 ASSETRA S.r.l. - P.IVA 12345678901 - All rights reserved.
+  - generic [ref=e144]:
+    - paragraph [ref=e145]: Utilizziamo i cookie per migliorare la tua esperienza. Continuando a navigare, accetti la nostra politica sulla privacy.
+    - button "Accetta" [ref=e146] [cursor=pointer]

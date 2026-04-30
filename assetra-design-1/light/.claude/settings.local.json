@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -L \"https://images.unsplash.com/photo-1497366216548-3752697da509?q=80&w=1200&auto=format&fit=crop\" -o \"C:/Git/assetra-design/light/assets/images/about-meeting-space.jpg\" -s -w \"%{http_code}\")",
+      "Bash(curl -L \"https://images.unsplash.com/photo-1556912162-0e03c7a2a5d7?q=80&w=1000&auto=format&fit=crop\" -o \"C:/Git/assetra-design/light/assets/images/portfolio-retail-showroom.jpg\" -s -w \"%{http_code}\")",
+      "Bash(curl -L \"https://images.unsplash.com/photo-1517524283322-a0ecbf956d8c?q=80&w=1000&auto=format&fit=crop\" -o \"C:/Git/assetra-design/light/assets/images/portfolio-hospitality-lounge.jpg\" -s -w \"%{http_code}\")",
+      "Bash(curl -L \"https://images.unsplash.com/photo-1497215728101-856f39a4f0eb?q=80&w=1000&auto=format&fit=crop\" -o \"C:/Git/assetra-design/light/assets/images/portfolio-office-openspace.jpg\" -s -w \"%{http_code}\")",
+      "Bash(curl -L \"https://images.unsplash.com/photo-1595514020092-282d83cd7950?q=80&w=1000&auto=format&fit=crop\" -o \"C:/Git/assetra-design/light/assets/images/portfolio-retail-boutique.jpg\" -s -w \"%{http_code}\")",
+      "Bash(curl -L \"https://images.unsplash.com/photo-1507720386189-54db1b137521?q=80&w=1000&auto=format&fit=crop\" -o \"C:/Git/assetra-design/light/assets/images/portfolio-professional-studio.jpg\" -s -w \"%{http_code}\")",
+      "Bash(curl -L \"https://images.unsplash.com/photo-1574953920606-d48085d378b7?q=80&w=1000&auto=format&fit=crop\" -o \"C:/Git/assetra-design/light/assets/images/portfolio-hospitality-restaurant.jpg\" -s -w \"%{http_code}\")",
+      "WebSearch",
+      "WebFetch(domain:unsplash.com)",
+      "Bash(curl -L \"https://images.unsplash.com/photo-1758448500688-3ababa93fd67?fm=jpg&q=80&w=1200&auto=format&fit=crop\" -o \"C:/Git/assetra-design/light/assets/images/about-meeting-space.jpg\" -s -w \"%{http_code}\")",
+      "Bash(curl -L \"https://images.unsplash.com/photo-1757366462755-af5e594bd036?fm=jpg&q=80&w=1000&auto=format&fit=crop\" -o \"C:/Git/assetra-design/light/assets/images/portfolio-retail-showroom.jpg\" -s -w \"%{http_code}\")",
+      "Bash(curl -L \"https://images.unsplash.com/photo-1767395523555-c44546bea0f0?fm=jpg&q=80&w=1000&auto=format&fit=crop\" -o \"C:/Git/assetra-design/light/assets/images/portfolio-hospitality-lounge.jpg\" -s -w \"%{http_code}\")",
+      "Bash(curl -L \"https://images.unsplash.com/photo-1746021535489-00edc5efb203?fm=jpg&q=80&w=1000&auto=format&fit=crop\" -o \"C:/Git/assetra-design/light/assets/images/portfolio-office-openspace.jpg\" -s -w \"%{http_code}\")",
+      "Bash(curl -L \"https://images.unsplash.com/photo-1758448501002-8c7bb7a7d9ff?fm=jpg&q=80&w=1000&auto=format&fit=crop\" -o \"C:/Git/assetra-design/light/assets/images/portfolio-retail-boutique.jpg\" -s -w \"%{http_code}\")",
+      "Bash(curl -L \"https://images.unsplash.com/photo-1497366811353-6870744d04b2?fm=jpg&q=80&w=1000&auto=format&fit=crop\" -o \"C:/Git/assetra-design/light/assets/images/portfolio-professional-studio.jpg\" -s -w \"%{http_code}\")",
+      "Bash(curl -L \"https://images.unsplash.com/photo-1729394405518-eaf2a0203aa7?fm=jpg&q=80&w=1000&auto=format&fit=crop\" -o \"C:/Git/assetra-design/light/assets/images/portfolio-hospitality-restaurant.jpg\" -s -w \"%{http_code}\")"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+# ASSETRA — Robots.txt
+# https://www.assetra.it
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.assetra.it/sitemap.xml
+
+# Crawl-delay (opzionale, per bot che lo supportano)
+Crawl-delay: 1
+
+# Disallow admin/private areas (se presenti in futuro)
+# Disallow: /admin/
+# Disallow: /private/

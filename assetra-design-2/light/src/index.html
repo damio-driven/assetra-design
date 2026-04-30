@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="it" class="light-theme">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ASSETRA rappresenta Arken Group in interior design e arredo contract di eccellenza per retail, hospitality, uffici e spazi professionali.">
+  <meta name="keywords" content="interior design, arredo contract, retail, hospitality, uffici, Arken Group">
+  <meta name="author" content="ASSETRA">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="ASSETRA - Interior Design Excellence">
+  <meta property="og:description" content="Rappresentanza premium di mobili per soluzioni di interior design e arredo contract">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.assestra.it">
+  
+  <!-- SEO -->
+  <title>ASSETRA - Interior Design & Arredo Contract Excellence</title>
+  
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#DC2626',
+              darkRed: '#991B1B',
+              gold: '#D4AF37',
+              beige: '#F5F0E8',
+              charcoal: '#1C1C1C',
+              bronze: '#CD7F32'
+            }
+          },
+          fontFamily: {
+            roman: ['Playfair Display', 'serif'],
+            sans: ['Lato', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Styles -->
+  <style>
+    .dark-theme {
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+      color: #f5f5f5;
+    }
+    .light-theme {
+      font-family: 'Lato', sans-serif;
+      background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 50%, #fafafa 100%);
+      color: #1a1a1a;
+    }
+    .roman-serif {
+      font-family: 'Playfair Display', serif;
+    }
+    .bg-parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .hero-overlay {
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+    }
+    /* Smooth transition for theme switch */
+    button[data-theme="light"],
+    .light-theme {
+      --transition-duration: 0.5s;
+    }
+    button[data-theme="dark"],
+    .dark-theme {
+      --transition-duration: 0.5s;
+    }
+    .scroll-smooth {
+      scroll-behavior: smooth;
+    }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    .dark-theme ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+    .dark-theme ::-webkit-scrollbar-thumb {
+      background: #444;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+    .dark-theme ::-webkit-scrollbar-thumb:hover {
+      background: #666;
+    }
+  </style>
+</head>
+<body class="scroll-smooth antialiased">
+  
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" class="hidden fixed bottom-0 left-0 right-0 z-50 p-4">
+    <div class="max-w-7xl mx-auto bg-white dark:bg-brand-charcoal border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-start gap-3 md:gap-4">
+          <svg class="w-8 h-8 text-brand-red flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+          </svg>
+          <div class="text-sm">
+            <p class="font-semibold">Privacy & Cookies</p>
+            <p class="text-gray-600 dark:text-gray-400 mt-1">
+              Utilizziamo cookie per migliorare la tua esperienza e per analisi statistiche. 
+              I tuoi dati sono protetti in conformità al GDPR. 
+              <a href="#privacy-policy" class="text-brand-red hover:underline">Leggi la nostra Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" id="accept-all-cookies" class="w-4 h-4 text-brand-red border-gray-300 rounded focus:ring-brand-red">
+            <span class="text-sm">Accetta tutti</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <select id="cookie-consent" class="text-sm border border-gray-300 rounded px-2 py-1 dark:bg-brand-charcoal dark:border-gray-700 dark:text-gray-300">
+              <option value="necessary">Solo essenziali</option>
+              <option value="statistics">Statistics</option>
+              <option value="marketing">Marketing</option>
+              <option value="custom">Personalizzato...</option>
+            </select>
+          </label>
+          <button class="px-4 py-2 bg-brand-red text-white rounded hover:bg-brand-darkRed transition" id="accept-cookies-btn">
+            Accetto
+          </button>
+          <button class="px-4 py-2 bg-gray-300 dark:bg-gray-700 rounded hover:bg-gray-400 dark:hover:bg-gray-600 transition" onclick="document.getElementById('cookie-banner').classList.add('hidden')">
+            Non mostrare più
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-white/95 dark:bg-brand-charcoal/95 backdrop-blur-sm shadow-sm transition-all duration-300" id="main-header">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2 group">
+          <span class="text-2xl font-bold tracking-tight group-hover:text-brand-red transition">ASSETRA<span class="text-brand-red">.</span></span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center gap-8">
+          <li><a href="#hero" class="text-sm uppercase tracking-wider hover:text-brand-red transition relative group">
+            Home
+            <span class="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-brand-red group-hover:w-full transition-all duration-300"></span>
+          </a></li>
+          <li><a href="#chi-siamo" class="text-sm uppercase tracking-wider hover:text-brand-red transition relative group">
+            Chi Siamo
+            <span class="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-brand-red group-hover:w-full transition-all duration-300"></span>
+          </a></li>
+          <li><a href="#servizi" class="text-sm uppercase tracking-wider hover:text-brand-red transition relative group">
+            Servizi
+            <span class="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-brand-red group-hover:w-full transition-all duration-300"></span>
+          </a></li>
+          <li><a href="#portfolio" class="text-sm uppercase tracking-wider hover:text-brand-red transition relative group">
+            Portfolio
+            <span class="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-brand-red group-hover:w-full transition-all duration-300"></span>
+          </a></li>
+          <li><a href="#contatti" class="text-sm uppercase tracking-wider hover:text-brand-red transition relative group">
+            Contatti
+            <span class="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-brand-red group-hover:w-full transition-all duration-300"></span>
+          </a></li>
+        </ul>
+        
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition focus:outline-none focus:ring-2 focus:ring-brand-red" aria-label="Toggle theme">
+          <svg id="sun-icon" class="hidden w-5 h-5 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+          </svg>
+          <svg id="moon-icon" class="w-5 h-5 text-gray-600 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+        </button>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <ul class="flex flex-col gap-3">
+          <li><a href="#hero" class="text-sm uppercase tracking-wider hover:text-brand-red transition">Home</a></li>
+          <li><a href="#chi-siamo" class="text-sm uppercase tracking-wider hover:text-brand-red transition">Chi Siamo</a></li>
+          <li><a href="#servizi" class="text-sm uppercase tracking-wider hover:text-brand-red transition">Servizi</a></li>
+          <li><a href="#portfolio" class="text-sm uppercase tracking-wider hover:text-brand-red transition">Portfolio</a></li>
+          <li><a href="#contatti" class="text-sm uppercase tracking-wider hover:text-brand-red transition">Contatti</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center bg-parallax bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600210492486-724fe4222e4f?w=1920&q=80');">
+    <div class="hero-overlay absolute inset-0"></div>
+    
+    <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-roman mb-6 leading-tight animate-fade-in-up">
+        eccellenza <span class="text-brand-red hidden md:inline">interior</span>
+      </h1>
+      <h2 class="text-2xl md:text-4xl lg:text-5xl font-light mb-4 leading-relaxed">
+        soluzioni di design per <span class="font-semibold text-brand-red">retail</span>
+        <span class="hidden md:inline">, </span>
+        <span class="hidden md:inline">hospitality,</span>
+        <span class="hidden md:inline"> uffici</span>
+        <span class="hidden md:inline"> e</span>
+        <span class="hidden md:inline"> spazi</span>
+        <span class="hidden md:inline"> professionali</span>
+      </h2>
+      <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+        Assestra rappresenta Arken Group, leader nel settore dell'arredo contract e del design d'interni.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contatti" class="px-8 py-4 bg-brand-red text-white font-semibold rounded-full hover:bg-brand-darkRed transition transform hover:scale-105 shadow-lg">
+          Contattaci
+        </a>
+        <a href="#portfolio" class="px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-brand-charcoal transition transform hover:scale-105">
+          Vedi Progetti
+        </a>
+      </div>
+    </div>
+    
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="chi-siamo" class="py-24 px-4 bg-white dark:bg-brand-charcoal transition-colors duration-300">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-brand-red uppercase tracking-widest text-sm font-semibold">Chi Siamo</span>
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-roman mt-4 mb-6">Passione per il design</h2>
+        <div class="w-24 h-1 bg-brand-red mx-auto"></div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div class="order-2 md:order-1">
+          <img src="https://images.unsplash.com/photo-1586023492125-28b93c541970?w=800&q=80" 
+               alt="Arredo ufficio elegante" 
+               class="w-full h-[400px] object-cover rounded-lg shadow-2xl hover:shadow-3xl transition-shadow duration-500">
+        </div>
+        <div class="order-1 md:order-2 space-y-6">
+          <h3 class="text-3xl font-roman">Da oltre un decennio, Assestra rappresenta l'eccellenza del design italiano</h3>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+            Collaboriamo con <strong>Arken Group</strong>, uno dei player leader nel settore dell'arredo contract e dell'interior design. La nostra missione è portare alle aziende del retail, hospitality e uffici di tutte le dimensioni le soluzioni più innovative e di design.
+          </p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+            La selezione rigorosa dei prodotti, l'attenzione ai dettagli e la competenza tecnica del nostro team ci permettono di offrire un servizio che va oltre la semplice rappresentanza: creiamo vere e proprie esperienze di design per i nostri clienti.
+          </p>
+          <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-brand-red" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Selezione rigorosa di prodotti premium</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-brand-red" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Consulentzia d'esperto</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-brand-red" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Progetti personalizzati</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <div class="text-4xl font-roman text-brand-red mb-2">10+</div>
+          <div class="text-sm uppercase tracking-wide text-gray-600 dark:text-gray-400">Anni di esperienza</div>
+        </div>
+        <div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <div class="text-4xl font-roman text-brand-red mb-2">500+</div>
+          <div class="text-sm uppercase tracking-wide text-gray-600 dark:text-gray-400">Progetti realizzati</div>
+        </div>
+        <div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <div class="text-4xl font-roman text-brand-red mb-2">100+</div>
+          <div class="text-sm uppercase tracking-wide text-gray-600 dark:text-gray-400">Brand premium</div>
+        </div>
+        <div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <div class="text-4xl font-roman text-brand-red mb-2">24/7</div>
+          <div class="text-sm uppercase tracking-wide text-gray-600 dark:text-gray-400">Supporto clienti</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="servizi" class="py-24 px-4 bg-gray-50 dark:bg-[#1a1a1a] transition-colors duration-300">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-brand-red uppercase tracking-widest text-sm font-semibold">Servizi & Soluzioni</span>
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-roman mt-4 mb-6">La nostra expertise</h2>
+        <div class="w-24 h-1 bg-brand-red mx-auto"></div>
+      </div>
+      
+      <div class="space-y-16">
+        <!-- Service 1 -->
+        <div class="group">
+          <div class="relative h-64 overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1497366216548-3752697daq0c?w=1200&q=80" 
+                 alt="Retail interior design" 
+                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+              <div class="text-white">
+                <h3 class="text-2xl font-roman mb-2">Retail Design Solutions</h3>
+                <p class="text-gray-300 text-sm max-w-md">Creiamo ambienti retail di grande impatto che trasformano i visitatori in clienti fedeli.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-6 mt-6">
+            <div>
+              <h4 class="font-semibold text-lg mb-2">E-commerce Design</h4>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                Soluzioni per e-commerce che comunicano l'eccellenza del brand attraverso design e funzionalità.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-lg mb-2">Experience Store</h4>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                Punti vendita esperienziali che raccontano la storia del brand e guidano l'acquisto.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="group">
+          <div class="relative h-64 overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1517849845537-8f449577b0f8?w=1200&q=80" 
+                 alt="Hospitality interior design" 
+                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+              <div class="text-white">
+                <h3 class="text-2xl font-roman mb-2">Hospitality Excellence</h3>
+                <p class="text-gray-300 text-sm max-w-md">Hotel, resort e restaurant: progettiamo spazi che creano memorie indimenticabili.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-6 mt-6">
+            <div>
+              <h4 class="font-semibold text-lg mb-2">Hotel & Resort</h4>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                Progettiamo hotel e resort che offrono un'esperienza di design coerenza e comfort.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-lg mb-2">Restaurant & Café</h4>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                Ambienti gastronomici dove ogni dettaglio contribuisce all'esperienza culinaria.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="group">
+          <div class="relative h-64 overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1497366814330-52d613018755?w=1200&q=80" 
+                 alt="Office interior design" 
+                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+              <div class="text-white">
+                <h3 class="text-2xl font-roman mb-2">Office Interior Design</h3>
+                <p class="text-gray-300 text-sm max-w-md">Uffici che ispirano produttività, creatività e benessere ai dipendenti e ai clienti.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-6 mt-6">
+            <div>
+              <h4 class="font-semibold text-lg mb-2">Corporate Offices</h4>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                Progettiamo uffici corporate che riflettono l'identità aziendale e favoriscono la collaborazione.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-lg mb-2">Coworking Spaces</h4>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                Spazi collaborativi flessibili che rispondono alle esigenze del lavoro moderno.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Service 4 -->
+        <div class="group">
+          <div class="relative h-64 overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1600607687939-8e77d2455410?w=1200&q=80" 
+                 alt="Professional spaces" 
+                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+              <div class="text-white">
+                <h3 class="text-2xl font-roman mb-2">Professional Environments</h3>
+                <p class="text-gray-300 text-sm max-w-md">Spazi professionali che comunicano il vostro brand e migliorano l'esperienza dei clienti.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-6 mt-6">
+            <div>
+              <h4 class="font-semibold text-lg mb-2">Showrooms & Boutique</h4>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                Ambienti espositivi che valorizzano i prodotti e creano un'atmosfera unica.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-lg mb-2">Consulting</h4>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                Supporto completo per la progettazione e l'installazione dei vostri spazi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-24 px-4 bg-white dark:bg-brand-charcoal transition-colors duration-300">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-brand-red uppercase tracking-widest text-sm font-semibold">Portfolio</span>
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-roman mt-4 mb-6">Progetti Realizzati</h2>
+        <div class="w-24 h-1 bg-brand-red mx-auto"></div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <article class="group relative overflow-hidden rounded-xl h-96">
+          <img src="https://images.unsplash.com/photo-1600585154340-be61e1a62776?w=800&q=80" 
+               alt="Progetto retail Milano" 
+               class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-8">
+            <span class="text-brand-red text-sm uppercase tracking-wide mb-2">Milano</span>
+            <h3 class="text-2xl font-roman text-white mb-2 group-hover:text-brand-red transition-colors">Moncler Flagship</h3>
+            <p class="text-gray-300 text-sm">Retail Design</p>
+          </div>
+        </article>
+        
+        <!-- Project 2 -->
+        <article class="group relative overflow-hidden rounded-xl h-96">
+          <img src="https://images.unsplash.com/photo-1554282567-89f018690d8b?w=800&q=80" 
+               alt="Progetto hospitality Roma" 
+               class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-8">
+            <span class="text-brand-red text-sm uppercase tracking-wide mb-2">Roma</span>
+            <h3 class="text-2xl font-roman text-white mb-2 group-hover:text-brand-red transition-colors">Villa d'Este Hotel</h3>
+            <p class="text-gray-300 text-sm">Luxury Hospitality</p>
+          </div>
+        </article>
+        
+        <!-- Project 3 -->
+        <article class="group relative overflow-hidden rounded-xl h-96">
+          <img src="https://images.unsplash.com/photo-1497215748102-8e8f23c1d6cd?w=800&q=80" 
+               alt="Progetto ufficio Torino" 
+               class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-8">
+            <span class="text-brand-red text-sm uppercase tracking-wide mb-2">Torino</span>
+            <h3 class="text-2xl font-roman text-white mb-2 group-hover:text-brand-red transition-colors">BMW Design Center</h3>
+            <p class="text-gray-300 text-sm">Corporate Offices</p>
+          </div>
+        </article>
+        
+        <!-- Project 4 -->
+        <article class="group relative overflow-hidden rounded-xl h-96">
+          <img src="https://images.unsplash.com/photo-1558981806-ec527fa84f3d?w=800&q=80" 
+               alt="Progetto restaurant Firenze" 
+               class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-8">
+            <span class="text-brand-red text-sm uppercase tracking-wide mb-2">Firenze</span>
+            <h3 class="text-2xl font-roman text-white mb-2 group-hover:text-brand-red transition-colors">Osteria del Gusto</h3>
+            <p class="text-gray-300 text-sm">Restaurant Design</p>
+          </div>
+        </article>
+        
+        <!-- Project 5 -->
+        <article class="group relative overflow-hidden rounded-xl h-96">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe4222e4f?w=800&q=80" 
+               alt="Progetto flagship Bologna" 
+               class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-8">
+            <span class="text-brand-red text-sm uppercase tracking-wide mb-2">Bologna</span>
+            <h3 class="text-2xl font-roman text-white mb-2 group-hover:text-brand-red transition-colors">McQ Flagship Store</h3>
+            <p class="text-gray-300 text-sm">Luxury Retail</p>
+          </div>
+        </article>
+        
+        <!-- Project 6 -->
+        <article class="group relative overflow-hidden rounded-xl h-96">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e306c36?w=800&q=80" 
+               alt="Progetto coworking Verona" 
+               class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-8">
+            <span class="text-brand-red text-sm uppercase tracking-wide mb-2">Verona</span>
+            <h3 class="text-2xl font-roman text-white mb-2 group-hover:text-brand-red transition-colors">Hub Coworking</h3>
+            <p class="text-gray-300 text-sm">Commercial Spaces</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 relative bg-brand-red overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <svg width="100%" height="100%">
+        <defs>
+          <pattern id="pattern-circles" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+            <circle cx="20" cy="20" r="1" fill="currentColor"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#pattern-circles)"/>
+      </svg>
+    </div>
+    
+    <div class="relative z-10 px-4 text-center">
+      <h2 class="text-4xl md:text-5xl font-roman text-white mb-6">Ready to start your project?</h2>
+      <p class="text-white/90 max-w-2xl mx-auto mb-10 text-lg">
+        Parliamo dei vostri progetti e scopriamo come Assestra può portare il design di eccellenza nella vostra azienda.
+      </p>
+      <a href="#contatti" class="inline-flex items-center gap-3 bg-white text-brand-red px-10 py-4 font-semibold rounded-full hover:bg-gray-100 transition transform hover:scale-105 shadow-lg">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+        Contattaci Ora
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contatti" class="py-24 px-4 bg-gray-50 dark:bg-[#1a1a1a] transition-colors duration-300">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-brand-red uppercase tracking-widest text-sm font-semibold">Contatti</span>
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-roman mt-4 mb-6">Contattaci</h2>
+        <div class="w-24 h-1 bg-brand-red mx-auto"></div>
+      </div>
+      
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Contact Info -->
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-2xl font-roman mb-6">Informazioni</h3>
+            <div class="space-y-4">
+              <a href="tel:+390612345678" class="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-lg hover:shadow-lg transition group">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-brand-red/10 group-hover:bg-brand-red/20 transition">
+                  <svg class="w-6 h-6 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Telefono</p>
+                  <p class="font-semibold">+39 06 1234 5678</p>
+                </div>
+              </a>
+              
+              <a href="mailto:info@assestra.it" class="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-lg hover:shadow-lg transition group">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-brand-red/10 group-hover:bg-brand-red/20 transition">
+                  <svg class="w-6 h-6 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Email</p>
+                  <p class="font-semibold">info@assestra.it</p>
+                </div>
+              </a>
+              
+              <div class="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-lg group">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-brand-red/10 group-hover:bg-brand-red/20 transition">
+                  <svg class="w-6 h-6 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Indirizzo</p>
+                  <p class="font-semibold">Via del Design 1<br>00197 Roma</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <h3 class="text-2xl font-roman mb-6">Orari</h3>
+            <div class="space-y-3">
+              <div class="flex justify-between p-3 bg-white dark:bg-gray-800 rounded">
+                <span class="text-gray-600 dark:text-gray-400">Lun - Ven</span>
+                <span class="font-semibold">09:00 - 18:00</span>
+              </div>
+              <div class="flex justify-between p-3 bg-white dark:bg-gray-800 rounded">
+                <span class="text-gray-600 dark:text-gray-400">Sabato</span>
+                <span class="font-semibold">10:00 - 13:00</span>
+              </div>
+              <div class="flex justify-between p-3 bg-white dark:bg-gray-800 rounded opacity-50">
+                <span class="text-gray-600 dark:text-gray-400">Domenica</span>
+                <span class="font-semibold">Chiuso</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-8">
+          <form id="contact-form" novalidate>
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label for="name" class="block text-sm font-semibold mb-2">Nome *</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-brand-red focus:border-transparent transition bg-white dark:bg-gray-700 text-gray-900 dark:text-white" placeholder="Mario Rossi" required>
+                <p class="text-red-500 text-xs mt-1 hidden" id="name-error">Inserisci il tuo nome</p>
+              </div>
+              <div>
+                <label for="surname" class="block text-sm font-semibold mb-2">Cognome *</label>
+                <input type="text" id="surname" name="surname" class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-brand-red focus:border-transparent transition bg-white dark:bg-gray-700 text-gray-900 dark:text-white" placeholder="Rossi" required>
+                <p class="text-red-500 text-xs mt-1 hidden" id="surname-error">Inserisci il tuo cognome</p>
+              </div>
+            </div>
+            
+            <div class="mb-6">
+              <label for="email" class="block text-sm font-semibold mb-2">Email *</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-brand-red focus:border-transparent transition bg-white dark:bg-gray-700 text-gray-900 dark:text-white" placeholder="mario.rossi@email.com" required>
+              <p class="text-red-500 text-xs mt-1 hidden" id="email-error">Inserisci una email valida</p>
+            </div>
+            
+            <div class="mb-6">
+              <label for="subject" class="block text-sm font-semibold mb-2">Oggetto *</label>
+              <select id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-brand-red focus:border-transparent transition bg-white dark:bg-gray-700 text-gray-900 dark:text-white" required>
+                <option value="">Seleziona un argomento...</option>
+                <option value="general">Richiesta informazioni generali</option>
+                <option value="project">Progetto personalizzato</option>
+                <option value="partnership">Partnership</option>
+                <option value="support">Supporto</option>
+              </select>
+              <p class="text-red-500 text-xs mt-1 hidden" id="subject-error">Seleziona un argomento</p>
+            </div>
+            
+            <div class="mb-6">
+              <label for="message" class="block text-sm font-semibold mb-2">Messaggio *</label>
+              <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-brand-red focus:border-transparent transition resize-none bg-white dark:bg-gray-700 text-gray-900 dark:text-white" placeholder="Descrivi il tuo progetto o chiedici informazioni..." required></textarea>
+              <p class="text-red-500 text-xs mt-1 hidden" id="message-error">Inserisci un messaggio</p>
+            </div>
+            
+            <button type="submit" class="w-full py-4 bg-brand-red text-white font-semibold rounded-lg hover:bg-brand-darkRed transition transform hover:scale-[1.02] shadow-lg flex items-center justify-center gap-2">
+              <span>Invia Messaggio</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </button>
+            
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-4 text-center">
+              Invio del form comporta l'accettazione della nostra <a href="#privacy-policy" class="text-brand-red hover:underline">Privacy Policy</a>.
+              I tuoi dati saranno trattati in conformità al GDPR.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-charcoal text-white py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <!-- Brand -->
+        <div>
+          <a href="#" class="text-2xl font-bold tracking-tight mb-4 block">ASSETRA<span class="text-brand-red">.</span></a>
+          <p class="text-gray-400 leading-relaxed">
+            Rappresentanza premium di soluzioni di interior design e arredo contract di eccellenza.
+          </p>
+          <div class="flex gap-4 mt-6">
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 hover:bg-brand-red flex items-center justify-center transition" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-11.2l-1.5 11.2v-3.36c0-1.616-.857-2.646-2.217-2.646-.946 0-1.656.498-1.997 1.077l-.047.102-.047-.102c-.342-.58-1.051-1.077-1.997-1.077-1.36 0-2.217 1.03-2.217 2.646v3.36l-1.5-11.2v6.45c0 2.276 1.886 4.162 4.162 4.162s4.162-1.886 4.162-4.162v-6.45z"/>
+              </svg>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 hover:bg-brand-red flex items-center justify-center transition" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.364-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.98-6.98-1.281-.059-1.689-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.102-6.999c-1.674 0-3 .826-3 1.999s1.326 2 3 2c1.674 0 3-.827 3-2 0-1.173-1.326-1.999-3-1.999z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Sitemap</h4>
+          <ul class="space-y-2">
+            <li><a href="#hero" class="text-gray-400 hover:text-brand-red transition">Home</a></li>
+            <li><a href="#chi-siamo" class="text-gray-400 hover:text-brand-red transition">Chi Siamo</a></li>
+            <li><a href="#servizi" class="text-gray-400 hover:text-brand-red transition">Servizi</a></li>
+            <li><a href="#portfolio" class="text-gray-400 hover:text-brand-red transition">Portfolio</a></li>
+            <li><a href="#contatti" class="text-gray-400 hover:text-brand-red transition">Contatti</a></li>
+          </ul>
+        </div>
+        
+        <!-- Services -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Servizi</h4>
+          <ul class="space-y-2">
+            <li><a href="#servizi" class="text-gray-400 hover:text-brand-red transition">Retail Design</a></li>
+            <li><a href="#servizi" class="text-gray-400 hover:text-brand-red transition">Hospitality</a></li>
+            <li><a href="#servizi" class="text-gray-400 hover:text-brand-red transition">Office Design</a></li>
+            <li><a href="#servizi" class="text-gray-400 hover:text-brand-red transition">Consulting</a></li>
+            <li><a href="#portfolio" class="text-gray-400 hover:text-brand-red transition">Progetti Realizzati</a></li>
+          </ul>
+        </div>
+        
+        <!-- Legal -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Legale</h4>
+          <ul class="space-y-2">
+            <li><a href="#privacy-policy" class="text-gray-400 hover:text-brand-red transition">Privacy Policy</a></li>
+            <li><a href="#cookie-policy" class="text-gray-400 hover:text-brand-red transition">Cookie Policy</a></li>
+            <li><a href="#terms" class="text-gray-400 hover:text-brand-red transition">Termini e Condizioni</a></li>
+            <li><a href="#legal" class="text-gray-400 hover:text-brand-red transition">Cookie Settings</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2024 ASSETRA. Tutti i diritti riservati.</p>
+        <p class="mt-2">Rappresentanza Arken Group - Design di eccellenza per retail, hospitality e uffici</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+/* ==============================================
+   ASSETRA — Cookie Banner CSS
+   ============================================== */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1500;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-gold);
+  padding: 24px var(--container-px);
+  transform: translateY(100%);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.5);
+}
+
+.cookie-banner:not([hidden]) {
+  display: block;
+}
+
+.cookie-banner.visible {
+  transform: translateY(0);
+}
+
+.cookie-banner__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  flex-wrap: wrap;
+}
+
+.cookie-banner__title {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 6px;
+}
+
+.cookie-banner__desc {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.cookie-banner__desc a {
+  color: var(--color-gold);
+  border-bottom: 1px solid var(--color-border-gold);
+  transition: all 0.3s ease;
+}
+
+.cookie-banner__desc a:hover {
+  color: var(--color-text);
+  border-color: var(--color-gold);
+}
+
+.cookie-banner__text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.cookie-banner__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Customize panel */
+.cookie-customize-panel {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+  max-width: var(--container-max);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cookie-customize-panel:not([hidden]) {
+  display: flex;
+}
+
+.cookie-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+}
+
+.cookie-option__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cookie-option__name {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--color-text);
+}
+
+.cookie-option__desc {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+/* Toggle switch */
+.cookie-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.cookie-toggle--forced {
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  color: var(--color-gold);
+  cursor: default;
+}
+
+.cookie-toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.cookie-toggle__slider {
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+  background: var(--color-border);
+  border-radius: 11px;
+  position: relative;
+  transition: background 0.3s ease;
+  flex-shrink: 0;
+}
+
+.cookie-toggle__slider::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background: var(--color-text-muted);
+  border-radius: 50%;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cookie-toggle input:checked + .cookie-toggle__slider {
+  background: var(--color-accent);
+}
+
+.cookie-toggle input:checked + .cookie-toggle__slider::after {
+  transform: translateX(18px);
+  background: white;
+}
+
+.cookie-toggle input:focus-visible + .cookie-toggle__slider {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+.cookie-save-btn {
+  align-self: flex-end;
+  margin-top: 8px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cookie-banner__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cookie-banner__actions {
+    width: 100%;
+  }
+
+  .cookie-banner__actions .btn {
+    flex: 1;
+    justify-content: center;
+  }
+}

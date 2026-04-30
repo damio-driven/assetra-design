@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/fetch-images.js)",
+      "Bash(start index.html)"
+    ]
+  }
+}

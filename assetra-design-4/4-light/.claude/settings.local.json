@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/fetch-images.js)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "Bash(npx --yes serve . --listen 5173)",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "Bash(npx kill-port *)",
+      "Bash(node -e ' *)",
+      "mcp__plugin_playwright_playwright__browser_evaluate"
+    ]
+  }
+}

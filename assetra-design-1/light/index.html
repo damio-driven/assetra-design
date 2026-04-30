@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ASSETRA - Rappresentanza di eccellenza per soluzioni di interior design e arredo contract: retail, hospitality, uffici, spazi professionali. Scopri le nostre soluzioni di design d'autore.">
+  <meta name="keywords" content="arredo contract, interior design, rappresentanza mobili, retail, hospitality, uffici, spazi professionali, arredo su misura, eccellenza italiana">
+  <title>ASSETRA | Arredo Contract e Interior Design di Eccellenza — Retail, Hospitality, Uffici</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ASSETRA | Arredo Contract e Interior Design di Eccellenza">
+  <meta property="og:description" content="Rappresentanza di eccellenza per soluzioni di interior design e arredo contract.">
+  <meta property="og:url" content="https://www.assetra.it">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Typography: Cormorant Garamond + DM Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
+
+  <!-- Header / Navbar -->
+  <header id="header" class="header" role="banner">
+    <nav class="navbar" role="navigation" aria-label="Navigazione principale">
+      <div class="container">
+        <!-- Logo -->
+        <a href="#hero" class="logo" aria-label="ASSETRA Home">
+          <svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <text x="0" y="28" font-family="Cormorant Garamond, Georgia, serif" font-size="28" font-weight="400" fill="#1A1A18">ASSETRA</text>
+            <circle cx="140" cy="24" r="4" fill="#C8102E"/>
+          </svg>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link" data-lang-it="Chi siamo" data-lang-en="About Us">Chi siamo</a></li>
+          <li><a href="#services" class="nav-link" data-lang-it="Servizi" data-lang-en="Services">Servizi</a></li>
+          <li><a href="#portfolio" class="nav-link" data-lang-it="Portfolio" data-lang-en="Portfolio">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link" data-lang-it="Contatti" data-lang-en="Contact">Contatti</a></li>
+        </ul>
+
+        <!-- Language Toggle -->
+        <button class="lang-toggle" id="lang-toggle" aria-label="Cambia lingua">
+          <span class="lang-current" id="lang-current">EN</span>
+        </button>
+
+        <!-- Mobile hamburger -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu mobile">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+      <ul class="mobile-nav" id="mobile-nav">
+        <li><a href="#about" class="mobile-nav-link">Chi siamo</a></li>
+        <li><a href="#services" class="mobile-nav-link">Servizi</a></li>
+        <li><a href="#portfolio" class="mobile-nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contatti</a></li>
+      </ul>
+      <div class="mobile-lang-toggle">
+        <button class="lang-toggle" id="mobile-lang-toggle" aria-label="Cambia lingua">
+          <span class="lang-current">EN</span>
+        </button>
+      </div>
+      <button class="close-menu" id="close-menu" aria-label="Chiudi menu">×</button>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero" aria-label="Intro">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">L'eccellenza prende forma.</h1>
+        <p class="hero-subtitle" data-lang-it="Rappresentanza di eccellenza per soluzioni di interior design e arredo contract. Dai nostri partner, per i tuoi spazi, con cura e professionalità che trasformano visioni in realtà tangibili." data-lang-en="Excellence in representation for interior design and contract furniture solutions. From our partners, for your spaces, with care and professionalism that transform visions into tangible realities.">
+          Rappresentanza di eccellenza per soluzioni di interior design e arredo contract.
+        </p>
+        <a href="#portfolio" class="hero-cta" data-lang-it="Scopri le soluzioni" data-lang-en="Discover our solutions">Scopri le soluzioni</a>
+        <div class="scroll-indicator">
+          <span class="scroll-line"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-label="Chi Siamo">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <span class="section-eyebrow" data-lang-it="Chi Siamo" data-lang-en="About Us">Chi Siamo</span>
+            <h2 class="section-title">Rappresentanza di eccellenza per spazi che ispirano</h2>
+            <p class="about-text" data-lang-it="ASSETRA rappresenta il meglio dell'arredo contract italiano, selezionando con cura brand d'eccellenza che incarnano valori di qualità, sostenibilità e design senza compromessi. Dal retail alla hospitality, dagli uffici ai spazi professionali, accompagniamo ogni progetto con un approccio personalizzato che ascolta le esigenze specifiche del cliente e trasforma gli spazi in vere e proprie esperienze." data-lang-en="ASSETRA represents the best of Italian contract furniture, carefully selecting excellence brands that embody quality, sustainability, and uncompromised design. From retail to hospitality, offices to professional spaces, we accompany every project with a personalized approach that listens to client needs and transforms spaces into true experiences.">
+              ASSETRA rappresenta il meglio dell'arredo contract italiano...
+            </p>
+            <p class="about-text" data-lang-it="La nostra selezione di brand d'eccellenza include soluzioni per retail, hospitality, uffici e spazi professionali, ognuna curata per garantire eccellenza in ogni dettaglio: materiali di pregio, finiture pregiate, e un design che trascende le tendenze per offrire durabilità e bellezza atemporale." data-lang-en="Our selection of excellence brands includes solutions for retail, hospitality, offices and professional spaces, each curated to guarantee excellence in every detail: premium materials, fine finishes, and a design that transcends trends to offer durability and timeless beauty.">
+                La nostra selezione di brand d'eccellenza include soluzioni per retail, hospitality...
+              </p>
+            <div class="stats-container">
+              <div class="stat-item">
+                <div class="stat-number" data-stat-years="0"></div>
+                <span class="stat-label" data-lang-it="Anni di esperienza" data-lang-en="Years of experience">Anni di esperienza</span>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-stat-brands="0"></div>
+                <span class="stat-label" data-lang-it="Brand rappresentati" data-lang-en="Brands represented">Brand rappresentati</span>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-stat-projects="0"></div>
+                <span class="stat-label" data-lang-it="Progetti completati" data-lang-en="Projects completed">Progetti completati</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image-wrapper">
+            <div class="about-image-placeholder">
+              <img
+                src="assets/images/about-meeting-space.jpg"
+                alt="Spazio meeting elegante in ambiente business moderno"
+                data-src-lazy
+                loading="lazy"
+                width="600"
+                height="700"
+              >
+              <span class="image-fallback" data-lang-it="Spazi di lavoro e meeting che riflettono eccellenza" data-lang-en="Work and meeting spaces that reflect excellence"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services" aria-label="Servizi">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow" data-lang-it="I Nostri Servizi" data-lang-en="Our Services">I Nostri Servizi</span>
+          <h2 class="section-title">Soluzioni su misura per ogni esigenza</h2>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Retail -->
+          <div class="service-card" data-category="retail">
+            <div class="service-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9,22 9,12 15,12 15,22"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Retail</h3>
+            <p class="service-desc" data-lang-it="Arredo per negozi e store di lusso che trasformano ogni visitatore in cliente." data-lang-en="Furniture for luxury retail stores that transform every visitor into a customer.">Arredo per negozi e store di lusso...</p>
+          </div>
+
+          <!-- Service 2: Hospitality -->
+          <div class="service-card" data-category="hospitality">
+            <div class="service-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 17.26V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2.74"/>
+                <polyline points="2,20 12,12 22,20"/>
+                <path d="M22 10v1.53a2 2 0 0 0 .93 1.45l1 1.45a2 2 0 0 1-2.42 2.72L20 20.74"/>
+                <path d="M5 7h13a2 2 0 0 1 2 2v11.26a2 2 0 0 1-1.93 2H8.93a2 2 0 0 1-1.93-2L7 9H5a2 2 0 0 1-2-2V9Z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Hospitality</h3>
+            <p class="service-desc" data-lang-it="Design per hotel, ristoranti e lounge che creano atmosfere memorabili." data-lang-en="Design for hotels, restaurants, and lounges that create memorable atmospheres.">Design per hotel, ristoranti e lounge...</p>
+          </div>
+
+          <!-- Service 3: Uffici -->
+          <div class="service-card" data-category="uffici">
+            <div class="service-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Uffici e Contract</h3>
+            <p class="service-desc" data-lang-it="Arredo per spazi corporate che promuovono benessere e produttività." data-lang-en="Furniture for corporate spaces that promote well-being and productivity.">Arredo per spazi corporate...</p>
+          </div>
+
+          <!-- Service 4: Spazi Professionali -->
+          <div class="service-card" data-category="professionali">
+            <div class="service-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Spazi Professionali</h3>
+            <p class="service-desc" data-lang-it="Soluzioni per studi professionali, studi legali e consultori." data-lang-en="Solutions for professional offices, law firms, and consulting offices.">Soluzioni per studi professionali...</p>
+          </div>
+
+          <!-- Service 5: Consulenza -->
+          <div class="service-card" data-category="consulenza">
+            <div class="service-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Consulenza</h3>
+            <p class="service-desc" data-lang-it="Supporto completo nella scelta e implementazione delle soluzioni d'arredo." data-lang-en="Comprehensive support in selecting and implementing furniture solutions.">Supporto completo nella scelta...</p>
+          </div>
+
+          <!-- Service 6: Progettazione -->
+          <div class="service-card" data-category="progettazione">
+            <div class="service-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+                <path d="M12 16v-4"/>
+                <path d="M12 8h.01"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Progettazione</h3>
+            <p class="service-desc" data-lang-it="Progettazione personalizzata di spazi su misura per ogni esigenza." data-lang-en="Custom design of spaces tailored to every need.">Progettazione personalizzata di spazi...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio" aria-label="Portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow" data-lang-it="Il Nostro Lavoro" data-lang-en="Our Work">Il Nostro Lavoro</span>
+          <h2 class="section-title">Progetti selezionati</h2>
+        </div>
+
+        <!-- Filter -->
+        <div class="portfolio-filter" role="tablist">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" aria-controls="portfolio-grid">
+            <span class="filter-text" data-lang-it="Tutti" data-lang-en="All">Tutti</span>
+          </button>
+          <button class="filter-btn" data-filter="retail" role="tab" aria-selected="false" aria-controls="portfolio-grid">
+            <span class="filter-text" data-lang-it="Retail" data-lang-en="Retail">Retail</span>
+          </button>
+          <button class="filter-btn" data-filter="hospitality" role="tab" aria-selected="false" aria-controls="portfolio-grid">
+            <span class="filter-text" data-lang-it="Hospitality" data-lang-en="Hospitality">Hospitality</span>
+          </button>
+          <button class="filter-btn" data-filter="uffici" role="tab" aria-selected="false" aria-controls="portfolio-grid">
+            <span class="filter-text" data-lang-it="Uffici" data-lang-en="Offices">Uffici</span>
+          </button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- Project 1 -->
+          <article class="portfolio-item" data-category="retail" data-category-en="retail">
+            <div class="portfolio-image">
+              <img
+                src="assets/images/portfolio-retail-showroom.jpg"
+                alt="Showroom retail moderno con mobili designer e illuminazione curata"
+                data-src-lazy
+                loading="lazy"
+                width="500"
+                height="600"
+              >
+              <span class="image-fallback">Store design moderno</span>
+            </div>
+            <div class="portfolio-content">
+              <span class="portfolio-category">Retail</span>
+              <h3 class="portfolio-title">Showroom Roma</h3>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="portfolio-item" data-category="hospitality" data-category-en="hospitality">
+            <div class="portfolio-image">
+              <img
+                src="assets/images/portfolio-hospitality-lounge.jpg"
+                alt="Lounge d'hotel elegante con materiali pregiati"
+                data-src-lazy
+                loading="lazy"
+                width="500"
+                height="600"
+              >
+              <span class="image-fallback">Lounge d'hotel</span>
+            </div>
+            <div class="portfolio-content">
+              <span class="portfolio-category">Hospitality</span>
+              <h3 class="portfolio-title">Hotel Lobby Milano</h3>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="portfolio-item" data-category="uffici" data-category-en="uffici">
+            <div class="portfolio-image">
+              <img
+                src="assets/images/portfolio-office-openspace.jpg"
+                alt="Ufficio open space moderno con arredo ergonomico"
+                data-src-lazy
+                loading="lazy"
+                width="500"
+                height="600"
+              >
+              <span class="image-fallback">Ufficio moderno</span>
+            </div>
+            <div class="portfolio-content">
+              <span class="portfolio-category">Uffici</span>
+              <h3 class="portfolio-title">Corporate Office Torino</h3>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="portfolio-item" data-category="retail" data-category-en="retail">
+            <div class="portfolio-image">
+              <img
+                src="assets/images/portfolio-retail-boutique.jpg"
+                alt="Negozio di design italiano con arredo curato"
+                data-src-lazy
+                loading="lazy"
+                width="500"
+                height="600"
+              >
+              <span class="image-fallback">Negozio di design</span>
+            </div>
+            <div class="portfolio-content">
+              <span class="portfolio-category">Retail</span>
+              <h3 class="portfolio-title">Boutique Napoli</h3>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="portfolio-item" data-category="professionali" data-category-en="professionali">
+            <div class="portfolio-image">
+              <img
+                src="assets/images/portfolio-professional-studio.jpg"
+                alt="Studio legale arredato con eleganza classica"
+                data-src-lazy
+                loading="lazy"
+                width="500"
+                height="600"
+              >
+              <span class="image-fallback">Studio legale</span>
+            </div>
+            <div class="portfolio-content">
+              <span class="portfolio-category">Spazi Professionali</span>
+              <h3 class="portfolio-title">Studio Legale Firenze</h3>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="portfolio-item" data-category="hospitality" data-category-en="hospitality">
+            <div class="portfolio-image">
+              <img
+                src="assets/images/portfolio-hospitality-restaurant.jpg"
+                alt="Ristorante italiano con arredo contemporaneo"
+                data-src-lazy
+                loading="lazy"
+                width="500"
+                height="600"
+              >
+              <span class="image-fallback">Ristorante</span>
+            </div>
+            <div class="portfolio-content">
+              <span class="portfolio-category">Hospitality</span>
+              <h3 class="portfolio-title">Ristorante Venezia</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Feed Section (Placeholder) -->
+    <section id="social-feed" class="social-feed" aria-label="Social Feed">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow" data-lang-it="Sulla Nostra Pagina" data-lang-en="On Our Page">Sulla Nostra Pagina</span>
+          <h2 class="section-title">Seguici sui social</h2>
+          <p class="section-subtitle" data-lang-it="Scopri i nostri ultimi progetti, ispirazioni e dietro le quinte su LinkedIn e Instagram." data-lang-en="Discover our latest projects, inspirations, and behind-the-scenes on LinkedIn and Instagram.">Scopri i nostri ultimi progetti...</p>
+        </div>
+
+        <div class="social-feed-grid">
+          <!-- LinkedIn Feed Placeholder -->
+          <div class="social-column linkedin">
+            <h3 class="social-column-title">
+              LinkedIn
+              <a href="#" class="social-link" aria-label="LinkedIn ASSETRA">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.561c0-1.328-.097-1.653-1.105-1.653-1.222 0-1.533.671-1.533 1.591v5.563h-3.605c-1.65 0-1.955-.925-1.955-3.066v-8.028c0-2.041 1.157-3.072 2.888-3.072 1.286 0 1.984.723 1.984 1.853v2.868h3.445v3.662h-3.445c-.458.948-1.636 1.995-1.636 3.904 0 2.496 1.088 3.624 2.912 3.624h3.55v4.663z"/>
+                </svg>
+              </a>
+            </h3>
+            <div class="social-embed-placeholder linkedin-placeholder">
+              <div class="placeholder-card">
+                <div class="placeholder-icon">in</div>
+                <div class="placeholder-content">
+                  <div class="placeholder-date">12 APR 2026</div>
+                  <div class="placeholder-text">Nuovo progetto hospitality completato a Milano...</div>
+                </div>
+              </div>
+              <div class="placeholder-card">
+                <div class="placeholder-icon">in</div>
+                <div class="placeholder-content">
+                  <div class="placeholder-date">08 APR 2026</div>
+                  <div class="placeholder-text">Scopri l'arredo del nuovo showroom...</div>
+                </div>
+              </div>
+              <div class="placeholder-card">
+                <div class="placeholder-icon">in</div>
+                <div class="placeholder-content">
+                  <div class="placeholder-date">03 APR 2026</div>
+                  <div class="placeholder-text">Le tendenze del design contract 2026...</div>
+                </div>
+              </div>
+              <div class="placeholder-overlay">
+                <span class="placeholder-text"><!-- TODO: sostituire con embed LinkedIn SDK --> &copy; 2026 LinkedIn Corporation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instagram Feed Placeholder -->
+          <div class="social-column instagram">
+            <h3 class="social-column-title">
+              Instagram
+              <a href="#" class="social-link" aria-label="Instagram ASSETRA">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.849-.069-3.225-.149-4.771-1.664-4.919-4.919-.058-1.265-.069-1.644-.069-4.849 0-3.204.012-3.584.069-4.849.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.163-2.759 6.163-6.163-2.759-6.162-6.163-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.79 4 4c0 2.209-1.791 4-4 4zm6.105-6.195c-1.646 0-2.997-.002-3.696-.008-1.385-.115-2.239-1.538-2.239-3.114v-.649c0-1.606 1.346-2.644 2.926-2.644h.903c1.6 0 2.796.952 3.02 2.164.108.531.11.874.11 1.468v1.125c0 1.628-1.097 2.904-2.665 2.995z"/>
+                </svg>
+              </a>
+            </h3>
+            <div class="social-embed-placeholder instagram-placeholder">
+              <div class="placeholder-card">
+                <div class="placeholder-icon">📷</div>
+                <div class="placeholder-content">
+                  <div class="placeholder-date">14 APR 2026</div>
+                  <div class="placeholder-text">Nuovo arrivo: collezione Primavera...</div>
+                </div>
+              </div>
+              <div class="placeholder-card">
+                <div class="placeholder-icon">📷</div>
+                <div class="placeholder-content">
+                  <div class="placeholder-date">10 APR 2026</div>
+                  <div class="placeholder-text">Bella vita: il nostro spazio al mare...</div>
+                </div>
+              </div>
+              <div class="placeholder-card">
+                <div class="placeholder-icon">📷</div>
+                <div class="placeholder-content">
+                  <div class="placeholder-date">05 APR 2026</div>
+                  <div class="placeholder-text">Sostenibilità nel design: i nostri valori...</div>
+                </div>
+              </div>
+              <div class="placeholder-overlay">
+                <span class="placeholder-text"><!-- TODO: sostituire con embed Instagram SDK --> &copy; 2026 Meta Platforms, Inc.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-label="Contatti">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="section-eyebrow" data-lang-it="Parliamo" data-lang-en="Let's Talk">Parliamo</span>
+            <h2 class="section-title">Iniziamo a parlare.</h2>
+            <p class="contact-subtitle" data-lang-it="Descrivi il tuo progetto e ti risponderemo al più presto per trovare insieme la soluzione ideale per i tuoi spazi." data-lang-en="Describe your project and we'll respond as soon as possible to find the ideal solution for your spaces together.">Descrivi il tuo progetto...</p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13 9-13 9 13z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <div>
+                  <span class="contact-label">Indirizzo</span>
+                  <span class="contact-value">Via Roma 123, 00100 Roma, Italia</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">info@assetra.it</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.18-1.18a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <div>
+                  <span class="contact-label">Telefono</span>
+                  <span class="contact-value">+39 06 1234 5678</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/>
+                  <path d="M4 1v3"/>
+                </svg>
+                <div>
+                  <span class="contact-label">Social</span>
+                  <div class="social-links">
+                    <a href="#" aria-label="LinkedIn ASSETRA">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.561c0-1.328-.097-1.653-1.105-1.653-1.222 0-1.533.671-1.533 1.591v5.563h-3.605c-1.65 0-1.955-.925-1.955-3.066v-8.028c0-2.041 1.157-3.072 2.888-3.072 1.286 0 1.984.723 1.984 1.853v2.868h3.445v3.662h-3.445c-.458.948-1.636 1.995-1.636 3.904 0 2.496 1.088 3.624 2.912 3.624h3.55v4.663z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram ASSETRA">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.849-.069-3.225-.149-4.771-1.664-4.919-4.919-.058-1.265-.069-1.644-.069-4.849 0-3.204.012-3.584.069-4.849.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.163-2.759 6.163-6.163-2.759-6.162-6.163-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.79 4 4c0 2.209-1.791 4-4 4zm6.105-6.195c-1.646 0-2.997-.002-3.696-.008-1.385-.115-2.239-1.538-2.239-3.114v-.649c0-1.606 1.346-2.644 2.926-2.644h.903c1.6 0 2.796.952 3.02 2.164.108.531.11.874.11 1.468v1.125c0 1.628-1.097 2.904-2.665 2.995z"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label" data-lang-it="Nome *" data-lang-en="Name *">Nome *</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  class="form-input"
+                  data-lang-placeholder="Il tuo nome"
+                  placeholder="Il tuo nome"
+                  required
+                >
+                <span class="form-error" id="error-name"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-surname" class="form-label" data-lang-it="Cognome *" data-lang-en="Surname *">Cognome *</label>
+                <input
+                  type="text"
+                  id="contact-surname"
+                  name="surname"
+                  class="form-input"
+                  data-lang-placeholder="Il tuo cognome"
+                  placeholder="Il tuo cognome"
+                  required
+                >
+                <span class="form-error" id="error-surname"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label" data-lang-it="Email *" data-lang-en="Email *">Email *</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  class="form-input"
+                  data-lang-placeholder="nome@esempio.it"
+                  placeholder="nome@esempio.it"
+                  required
+                >
+                <span class="form-error" id="error-email"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-phone" class="form-label" data-lang-it="Telefono" data-lang-en="Phone">Telefono</label>
+                <input
+                  type="tel"
+                  id="contact-phone"
+                  name="phone"
+                  class="form-input"
+                  data-lang-placeholder="+39 123 456 7890"
+                  placeholder="+39 123 456 7890">
+                <span class="form-error" id="error-phone"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-sector" class="form-label" data-lang-it="Settore" data-lang-en="Sector">Settore</label>
+                <select
+                  id="contact-sector"
+                  name="sector"
+                  class="form-select"
+                  data-lang-placeholder="Seleziona un settore"
+                  placeholder="Seleziona un settore">
+                  <option value="" data-lang-placeholder="Seleziona un settore" placeholder="Seleziona un settore"></option>
+                  <option value="retail" data-lang-opt="Retail" optlabel="Retail">Retail</option>
+                  <option value="hospitality" data-lang-opt="Hospitality" optlabel="Hospitality">Hospitality</option>
+                  <option value="uffici" data-lang-opt="Offices" optlabel="Offices">Uffici</option>
+                  <option value="professionali" data-lang-opt="Professional Spaces" optlabel="Professional Spaces">Spazi Professionali</option>
+                  <option value="altre" data-lang-opt="Other" optlabel="Other">Altro</option>
+                </select>
+                <span class="form-error" id="error-sector"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label" data-lang-it="Messaggio" data-lang-en="Message">Messaggio</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  class="form-textarea"
+                  rows="5"
+                  data-lang-placeholder="Descrivi il tuo progetto..."
+                  placeholder="Descrivi il tuo progetto..."
+                ></textarea>
+                <span class="form-error" id="error-message"></span>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <input
+                  type="checkbox"
+                  id="contact-privacy"
+                  name="privacy"
+                  class="form-checkbox"
+                  required>
+                <label for="contact-privacy" class="form-checkbox-label">
+                  <span data-lang-it="Ho letto e accetto la" data-lang-en="I have read and accept the">Ho letto e accetto la</span>
+                  <a href="privacy-policy.html" class="form-checkbox-link" data-lang-it="Privacy Policy" data-lang-en="Privacy Policy">Privacy Policy</a>
+                  <span data-lang-it="(*)" data-lang-en="(*)">*</span>
+                </label>
+                <span class="form-error" id="error-privacy"></span>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <input
+                  type="checkbox"
+                  id="contact-marketing"
+                  name="marketing"
+                  class="form-checkbox">
+                <label for="contact-marketing" class="form-checkbox-label">
+                  <span data-lang-it="Voglio ricevere aggiornamenti e offerte" data-lang-en="I want to receive updates and offers">Voglio ricevere aggiornamenti e offerte</span>
+                </label>
+              </div>
+
+              <button type="submit" class="form-submit-btn">
+                <span data-lang-it="Invia richiesta" data-lang-en="Send request">Invia richiesta</span>
+                <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22,2 15,22 11,13 2,9"/>
+                </svg>
+              </button>
+              <span class="form-status" id="form-status"></span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner" id="cookie-banner" aria-labelledby="cookie-consent-title" role="alertdialog" aria-modal="true">
+    <div class="container">
+      <div class="cookie-banner-content">
+        <div class="cookie-banner-message">
+          <p class="cookie-title" id="cookie-consent-title" data-lang-it="Rispettiamo la tua privacy. Utilizziamo i cookie per migliorare l'esperienza sul nostro sito." data-lang-en="We respect your privacy. We use cookies to improve your experience on our site.">Rispettiamo la tua privacy...</p>
+          <div class="cookie-categories">
+            <div class="cookie-category checkbox-group">
+              <input type="checkbox" id="cookie-necessary" name="cookie-consent" value="necessary" class="cookie-checkbox" checked disabled>
+              <label for="cookie-necessary" class="cookie-checkbox-label">
+                <span class="cookie-category-label" data-lang-it="Necessari" data-lang-en="Necessary">Necessari</span>
+                <span class="cookie-category-desc" data-lang-it="Essenziali per il funzionamento del sito" data-lang-en="Essential for site functionality">Essenziali per il funzionamento del sito</span>
+              </label>
+            </div>
+            <div class="cookie-category checkbox-group">
+              <input type="checkbox" id="cookie-analytics" name="cookie-consent" value="analytics" class="cookie-checkbox">
+              <label for="cookie-analytics" class="cookie-checkbox-label">
+                <span class="cookie-category-label" data-lang-it="Analitici" data-lang-en="Analytics">Analitici</span>
+                <span class="cookie-category-desc" data-lang-it="Per统计使用行为" data-lang-en="For usage statistics">Per statistiche sull'utilizzo</span>
+              </label>
+            </div>
+            <div class="cookie-category checkbox-group">
+              <input type="checkbox" id="cookie-marketing" name="cookie-consent" value="marketing" class="cookie-checkbox">
+              <label for="cookie-marketing" class="cookie-checkbox-label">
+                <span class="cookie-category-label" data-lang-it="Marketing/Social" data-lang-en="Marketing/Social">Marketing/Social</span>
+                <span class="cookie-category-desc" data-lang-it="Per personalizzare contenuti e pubblicità" data-lang-en="To personalize content and ads">Per personalizzare contenuti e pubblicità</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="cookie-buttons">
+          <button type="button" class="cookie-btn primary" id="cookie-accept-all" data-lang-it="Accetta tutti" data-lang-en="Accept all">Accetta tutti</button>
+          <button type="button" class="cookie-btn secondary" id="cookie-accept-necessary" data-lang-it="Solo necessari" data-lang-en="Only necessary">Solo necessari</button>
+          <button type="button" class="cookie-btn link" id="cookie-customize" data-lang-it="Personalizza" data-lang-en="Customize">Personalizza</button>
+        </div>
+      </div>
+      <button type="button" class="cookie-dismiss" id="cookie-dismiss" aria-label="Chiudi banner cookie">×</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo" aria-label="Piè di pagina">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">
+            <svg width="120" height="32" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <text x="0" y="28" font-family="Cormorant Garamond, Georgia, serif" font-size="24" font-weight="400" fill="#1A1A18">ASSETRA</text>
+              <circle cx="140" cy="24" r="4" fill="#C8102E"/>
+            </svg>
+          </a>
+          <p class="footer-tagline" data-lang-it="L'eccellenza prende forma." data-lang-en="Excellence takes form.">L'eccellenza prende forma.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-title" data-lang-it="Navigazione" data-lang-en="Navigation">Navigazione</h4>
+          <ul class="footer-nav">
+            <li><a href="#about" class="footer-link" data-lang-it="Chi siamo" data-lang-en="About Us">Chi siamo</a></li>
+            <li><a href="#services" class="footer-link" data-lang-it="Servizi" data-lang-en="Services">Servizi</a></li>
+            <li><a href="#portfolio" class="footer-link" data-lang-it="Portfolio" data-lang-en="Portfolio">Portfolio</a></li>
+            <li><a href="#contact" class="footer-link" data-lang-it="Contatti" data-lang-en="Contact">Contatti</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-legal">
+          <h4 class="footer-title" data-lang-it="Legale" data-lang-en="Legal">Legale</h4>
+          <ul class="footer-nav">
+            <li><a href="privacy-policy.html" class="footer-link" data-lang-it="Privacy Policy" data-lang-en="Privacy Policy">Privacy Policy</a></li>
+            <li><a href="cookie-policy.html" class="footer-link" data-lang-it="Cookie Policy" data-lang-en="Cookie Policy">Cookie Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4 class="footer-title" data-lang-it="Seguici" data-lang-en="Follow Us">Seguici</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="LinkedIn ASSETRA">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.561c0-1.328-.097-1.653-1.105-1.653-1.222 0-1.533.671-1.533 1.591v5.563h-3.605c-1.65 0-1.955-.925-1.955-3.066v-8.028c0-2.041 1.157-3.072 2.888-3.072 1.286 0 1.984.723 1.984 1.853v2.868h3.445v3.662h-3.445c-.458.948-1.636 1.995-1.636 3.904 0 2.496 1.088 3.624 2.912 3.624h3.55v4.663z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram ASSETRA">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.849-.069-3.225-.149-4.771-1.664-4.919-4.919-.058-1.265-.069-1.644-.069-4.849 0-3.204.012-3.584.069-4.849.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.163-2.759 6.163-6.163-2.759-6.162-6.163-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.79 4 4c0 2.209-1.791 4-4 4zm6.105-6.195c-1.646 0-2.997-.002-3.696-.008-1.385-.115-2.239-1.538-2.239-3.114v-.649c0-1.606 1.346-2.644 2.926-2.644h.903c1.6 0 2.796.952 3.02 2.164.108.531.11.874.11 1.468v1.125c0 1.628-1.097 2.904-2.665 2.995z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright" data-lang-it="© 2025 ASSETRA. Tutti i diritti riservati." data-lang-en="© 2025 ASSETRA. All rights reserved.">© 2025 ASSETRA. Tutti i diritti riservati.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cookie-consent.js"></script>
+  <script src="assets/js/social-feed-placeholder.js"></script>
+</body>
+</html>
