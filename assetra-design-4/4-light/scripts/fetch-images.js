@@ -13,7 +13,7 @@ const ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY || 'ev0-JDuNlqumi0WaqTYQjhqLE
 const OUTPUT_DIR = path.join(__dirname, '..', 'assets', 'images');
 
 const imagesToFetch = [
-  { query: 'luxury office interior design',              filename: 'hero-main.jpg',               w: 1920, h: 1080 },
+  { query: 'luxury penthouse living room elegant bright interior design',filename: 'hero-main.jpg',               w: 1920, h: 1080 },
   { query: 'contemporary hospitality lounge light',      filename: 'hero-alt.jpg',                w: 1920, h: 1080 },
   { query: 'elegant interior design studio consultation',filename: 'about-main.jpg',              w: 1200, h: 800  },
   { query: 'modern retail store interior design',        filename: 'portfolio-retail-01.jpg',     w: 800,  h: 600  },
@@ -87,7 +87,7 @@ async function fetchImage({ query, filename, w, h }) {
 
     if (json.errors) throw new Error(json.errors.join(', '));
 
-    const imageUrl = json.urls.regular;
+    const imageUrl = `${json.urls.raw}&w=${w}&h=${h}&fit=crop&crop=center&q=85`;
     await downloadFile(imageUrl, dest);
     console.log(`   ok   ${filename}`);
 

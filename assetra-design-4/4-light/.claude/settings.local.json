@@ -7,7 +7,8 @@
       "mcp__plugin_playwright_playwright__browser_take_screenshot",
       "Bash(npx kill-port *)",
       "Bash(node -e ' *)",
-      "mcp__plugin_playwright_playwright__browser_evaluate"
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "Bash(node *)"
     ]
   }
 }
